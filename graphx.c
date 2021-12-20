@@ -20,8 +20,8 @@ void init_GFX(GFXContext * gfx_context, int window_width, int window_height)
 
 	SDL_SetRelativeMouseMode(SDL_TRUE);
 
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
 	gfx_context->gl_context = SDL_GL_CreateContext(gfx_context->window);
 
 	INFO("Graphic card vendor: '%s'", glGetString(GL_VENDOR));
